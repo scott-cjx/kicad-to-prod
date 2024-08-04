@@ -240,7 +240,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Power Sub.kicad_sch"
+		(property "Sheetfile" "PowerSub.kicad_sch"
 			(at 123.19 75.5146 0)
 			(effects
 				(font
