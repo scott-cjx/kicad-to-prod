@@ -1,4 +1,4 @@
-FROM kicad/kicad:nightly-full-arm64
+FROM kicad/kicad:nightly-full
 
 # Set environment variables if necessary
 ENV DISPLAY=:0
