@@ -3,10 +3,10 @@ FROM kicad/kicad:nightly-full
 # Set environment variables if necessary
 ENV DISPLAY=:0
 
+WORKDIR /ws
+
 RUN mkdir -p /ws/docs /ws/docs/checks /ws/docs/pcb /ws/docs/sch && \
     chmod -R 777 /ws/docs
-
-WORKDIR /ws
 
 COPY HDK HDK
 COPY docs docs
