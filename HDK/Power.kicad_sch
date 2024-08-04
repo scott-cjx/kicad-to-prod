@@ -220,8 +220,8 @@
 		)
 	)
 	(sheet
-		(at 123.19 67.31)
-		(size 12.7 7.62)
+		(at 130.81 72.39)
+		(size 12.7 10.16)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -230,9 +230,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "436407dc-b781-4c1a-84bb-c025e025d673")
-		(property "Sheetname" "Power Sub"
-			(at 123.19 66.5984 0)
+		(uuid "5162ff62-b4c7-42e0-b2f9-c7c02a085eee")
+		(property "Sheetname" "PowerSub"
+			(at 130.81 71.6784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -241,7 +241,7 @@
 			)
 		)
 		(property "Sheetfile" "PowerSub.kicad_sch"
-			(at 123.19 75.5146 0)
+			(at 130.81 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
