@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - kicad-workflow 
+      - kicad-workflow
       # - main
 permissions:
   contents: write
