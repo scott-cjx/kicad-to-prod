@@ -12,10 +12,9 @@ COPY HDK HDK
 COPY docs docs
 COPY scripts scripts
 
-WORKDIR /ws/docs
 WORKDIR /ws/docs/checks
 WORKDIR /ws/docs/sch
 WORKDIR /ws/docs/pcb
-WORKDIR /ws
+WORKDIR /ws/docs
 
 CMD ["sh", "scripts/main.sh"]
