@@ -42,10 +42,10 @@ jobs:
 
     - name: Create new branch
       run: |
-        git checkout -b update-docs-branch
+        git checkout -b kicad-workflow
 
     - name: Commit and push changes
       run: |
-        git add docs
+        git add .
         git commit -m "Update docs with generated files"
-        git push origin update-docs-branch
+        git push origin kicad-workflow
