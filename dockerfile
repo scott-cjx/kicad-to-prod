@@ -17,4 +17,4 @@ WORKDIR /ws/docs/sch
 WORKDIR /ws/docs/pcb
 WORKDIR /ws/docs
 
-CMD ["sh", "scripts/main.sh"]
+CMD ["sh", "/ws/scripts/main.sh"]
