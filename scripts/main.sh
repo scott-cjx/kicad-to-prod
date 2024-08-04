@@ -14,7 +14,6 @@ fi
 project_name=$(basename "$project_file" .kicad_pro)
 
 # export schematics
-# touch /ws/docs/sch/sch.pdf
 kicad-cli sch export pdf /ws/HDK/$project_name.kicad_sch --output /ws/docs/sch/sch.pdf
 kicad-cli sch export svg /ws/HDK/$project_name.kicad_sch --output /ws/docs/sch/
 
