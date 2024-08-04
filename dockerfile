@@ -14,6 +14,6 @@ COPY scripts scripts
 VOLUME ["/ws/docs"]
 
 # Make sure the scripts are executable
-RUN sudo chmod +x scripts/main.sh
+RUN chmod +x scripts/main.sh
 
-# CMD ["kicad-cli"]
+CMD ["sh", "scripts/main.sh"]
