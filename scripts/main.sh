@@ -20,6 +20,9 @@ kicad-cli sch export svg /ws/HDK/$project_name.kicad_sch --output /ws/docs/sch/
 # erc of schematics
 kicad-cli sch erc /ws/HDK/$project_name.kicad_sch --output /ws/docs/checks/erc.json --format json
 
+# collate sch
+sh /ws/scripts/collate_schsvg.sh
+
 # # export pcb
 # kicad-cli pcb export pdf /ws/HDK/$project_name.kicad_pcb --output /ws/docs/pcb/pcb.pdf
 # kicad-cli pcb export svg /ws/HDK/$project_name.kicad_pcb --output /ws/docs/pcb/
@@ -31,3 +34,4 @@ kicad-cli pcb export step /ws/HDK/$project_name.kicad_pcb --output /ws/docs/pcb/
 
 
 # drc of pcb
+
