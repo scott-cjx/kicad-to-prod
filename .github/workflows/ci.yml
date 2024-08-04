@@ -6,9 +6,9 @@ on:
       # - main
   workflow_run:
     workflows: [Kicad Workflow]
-    types:
-      - completed
-    
+    types: [requested]
+    branches: [main]
+
 permissions:
   contents: write
 jobs:
