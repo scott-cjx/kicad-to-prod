@@ -11,9 +11,10 @@ echo "# Collected Schematics Images" > "$md_file"
 for svg_file in "$svg_dir"/*.svg; do
   # Extract filename without extension
   file_name=$(basename "$svg_file" .svg)
+  refactored_file_name=$(basename "$svg_file" .svg)
 
   # Add image to Markdown file
-  echo "![${file_name}](${svg_file})" >> "$md_file"
+  echo "![${file_name}](${refactored_file_name}) \n\n" >> "$md_file"
 done
 
 echo "Markdown document created at $md_file"
