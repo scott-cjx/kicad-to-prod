@@ -21,7 +21,8 @@ kicad-cli sch export svg /ws/HDK/$project_name.kicad_sch --output /ws/docs/sch/
 kicad-cli sch erc /ws/HDK/$project_name.kicad_sch --output /ws/docs/checks/erc.json --format json
 
 # collate sch
-sh /ws/scripts/collate_schsvg.sh
+# sh /ws/scripts/collate_schsvg.sh
+python3 /ws/scripts/collate_schsvg.py
 
 # # export pcb
 # kicad-cli pcb export pdf /ws/HDK/$project_name.kicad_pcb --output /ws/docs/pcb/pcb.pdf

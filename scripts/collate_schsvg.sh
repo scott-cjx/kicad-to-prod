@@ -8,7 +8,7 @@ md_file="/ws/docs/sch/sch.md"
 echo "# Collected Schematics Images \n\n" > "$md_file"
 
 # Loop through all SVG files in the directory
-for svg_file in $(ls -v "$svg_dir"/*.svg | tac); do
+for svg_file in "$svg_dir"/*.svg; do
   # Extract filename without extension
   file_name=$(basename "$svg_file" .svg)
   refactored_file_name=$(basename "$svg_file" .svg)
