@@ -1,10 +1,5 @@
 #!/usr/bin/bash
 
-# Create output directories if they don't exist
-
-mkdir -p /ws/docs/checks
-mkdir -p /ws/docs/pcb
-mkdir -p /ws/docs/sch
 cd /ws/docs/sch
 
 # export schematics

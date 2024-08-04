@@ -1,18 +1,21 @@
 FROM kicad/kicad:nightly-full
 
+LABEL author="Scott CJX"
+LABEL version="1.0.0"
+
 # Set environment variables if necessary
 ENV DISPLAY=:0
 
 WORKDIR /ws
 
-RUN mkdir -p /ws/docs /ws/docs/checks /ws/docs/pcb /ws/docs/sch && \
-    chmod -R 777 /ws/docs
-
 COPY HDK HDK
 COPY docs docs
 COPY scripts scripts
 
-# Make sure the scripts are executable
-# RUN sudo chmod +x scripts/main.sh
+WORKDIR /ws/docs
+WORKDIR /ws/docs/checks
+WORKDIR /ws/docs/sch
+WORKDIR /ws/docs/pcb
+WORKDIR /ws
 
 CMD ["sh", "scripts/main.sh"]
