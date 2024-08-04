@@ -219,4 +219,42 @@
 			)
 		)
 	)
+	(sheet
+		(at 123.19 67.31)
+		(size 12.7 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "436407dc-b781-4c1a-84bb-c025e025d673")
+		(property "Sheetname" "Power Sub"
+			(at 123.19 66.5984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power Sub.kicad_sch"
+			(at 123.19 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "template_project"
+				(path "/26f9cb6a-983b-4cfb-90f4-253f3e225603/5a8acf05-2a27-44a5-a288-e5d9b346ca3c"
+					(page "3")
+				)
+			)
+		)
+	)
 )
