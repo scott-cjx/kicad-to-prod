@@ -4,7 +4,14 @@ mkdir -p /ws/docs/sch/
 mkdir -p /ws/docs/pcb/
 mkdir -p /ws/docs/checks/
 
-project_name="template_project"
+# Find the .kicad_pro file and extract its base name
+project_file=$(find /ws/HDK -maxdepth 1 -name "*.kicad_pro" -print -quit)
+if [ -z "$project_file" ]; then
+  echo "No .kicad_pro file found in /ws/HDK"
+  exit 1
+fi
+
+project_name=$(basename "$project_file" .kicad_pro)
 
 # export schematics
 # touch /ws/docs/sch/sch.pdf
