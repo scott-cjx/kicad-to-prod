@@ -19,7 +19,7 @@ kicad-cli sch erc /ws/HDK/*kicad_sch --output /ws/docs/checks/erc.json --format 
 kicad-cli pcb drc /ws/HDK/*kicad_pcb --output /ws/docs/checks/drc.json --format json
 
 mkdir -p /ws/docs/pcb/step
-kicad-cli pcb export step /ws/HDK/*kicad_pcb --output /ws/docs/pcb/
+kicad-cli pcb export step /ws/HDK/*kicad_pcb --output /ws/docs/pcb/pcb.step
 
 
 # drc of pcb
