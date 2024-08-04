@@ -1,13 +1,11 @@
 name: ci 
 on:
-  push:
-    branches:
-      - 'kicad-workflow'
-      # - main
   workflow_run:
-    workflows: [Kicad Workflow]
-    types: [requested]
-    branches: [main]
+    workflows: ["Kicad Workflow"]
+    types: 
+      - completed
+    branches:
+      - main
 
 permissions:
   contents: write
