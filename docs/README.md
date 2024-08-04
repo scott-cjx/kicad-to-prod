@@ -8,13 +8,13 @@ What features I want this project to have
 
 |S/N|Feature|Directory|Status|
 |:--|:--|--:|--:|
-|1|<b><u>Perform Checks|docs/erc/|-|
-|1.1|Schematics ERC report|sch/|✅|
-|1.2|PCB drc report|pcb/|✅||
+|1|<b><u>Perform Checks|docs/checks/|-|
+|1.1|Schematics ERC report||✅|
+|1.2|PCB drc report||✅||
 |||||
 |2|<b><u>Exporting Schematics|docs/sch/|-|
 |2.1|in: `PDF`, `SVG` format||✅|
-|2.2|Collate all `SVG` pages into a markdown doc|||
+|2.2|Collate all `SVG` pages into a markdown doc||✅|
 |||||
 |3|<b><u>Exporting PCB|docs/pcb/|-|
 |3.1|3D image in: `png` format, in multiple angles (top, bottom, overview)|||
