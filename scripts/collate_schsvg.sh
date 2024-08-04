@@ -14,7 +14,7 @@ for svg_file in "$svg_dir"/*.svg; do
   refactored_file_name=$(basename "$svg_file" .svg)
 
   # Add image to Markdown file
-  echo "![${file_name}]("${refactored_file_name}.svg") \n\n" >> "$md_file"
+  echo "![${file_name}](${refactored_file_name}.svg) \n\n" >> "$md_file"
 done
 
 echo "Markdown document created at $md_file"
