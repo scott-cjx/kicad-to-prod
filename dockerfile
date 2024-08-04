@@ -11,6 +11,7 @@ ENV DISPLAY=:0
 
 WORKDIR /ws
 
+
 RUN mkdir -p /ws/docs/
 
 COPY HDK HDK
