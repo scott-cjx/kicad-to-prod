@@ -40,6 +40,6 @@ jobs:
     - name: Commit and push changes
       run: |
         git checkout -b kicad-workflow
-        git add .
+        git add docs
         git commit -m "Update docs with generated files"
-        git push origin kicad-workflow
+        git push -f origin kicad-workflow
