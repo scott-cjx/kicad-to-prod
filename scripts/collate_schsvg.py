@@ -16,6 +16,7 @@ with open(md_file, 'w') as f:
     for svg_file in svg_files:
         file_name = os.path.splitext(svg_file)[0]
         image_path = os.path.join(svg_dir, svg_file)
-        f.write(f'![{file_name}]({image_path}) \n\n')
+        refactored_image_path = os.path.join(svg_file)
+        f.write(f'![{file_name}]({refactored_image_path}) \n\n')
 
 print(f"Markdown document created at {md_file}")
